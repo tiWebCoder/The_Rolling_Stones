@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Achievements</title>
+		<link rel="stylesheet" href="rollingStonesStyle.css"/>
+		<script src="rollingStonesScript.js"></script>
+		<link rel="shortcut icon" href="Images/logo.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+
+        <input class="checkbox" id="checkbox-menu" type="checkbox">
+
+        <!--Header-->
+        <header>
+            <a href="index.html"><img src="Images/logo.png" alt="logo" id="logo"></a>
+
+            <div class="container container-controls">
+				<label for="checkbox-menu" class="controls" id="menu-icon"><i class="fa fa-bars"></i></label>
+			</div>
+
+            <!--Menu-->
+			<nav id="menu">
+				<div class="container container-controls">
+					<label for="checkbox-menu" class="controls" id="close-button"><i class="fa fa-times"></i></label>
+				</div>
+
+				<a href="index.html">home</a>
+				<a href="biography.html">biography</a>
+				<a href="achievements.html" class="active">achievements</a>
+				<a href="tour.html">tour</a>
+			</nav>
+        </header>
+
+        <!--Main Page Content-->
+		<main>
+            <img src="Images/band-wallpaper.jpeg" alt="band-wallpaper" id="wallpaper">
+
+			<div class="container container-content" id="achievement-container">
+				<div class="card card-achievement">
+					<img src="Images/Awards/rock-and-roll-hall-of-fame.jpeg" alt="rock-and-roll-hall-of-fame" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">rock and roll hall of fame</span>
+					    <span class="card-description">Induction Year: 1989</span>
+                    </div>
+				</div>
+
+                <div class="card card-achievement">
+					<img src="Images/Awards/grammy.jpeg" alt="grammy" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">grammy awards</span>
+					    <span class="card-description">Nominations: 12</span>
+                        <span class="card-description">Awards Won: 3</span>
+                    </div>
+				</div>
+
+                <div class="card card-achievement">
+					<img src="Images/Awards/mtv.jpeg" alt="mtv" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">mtv awards</span>
+					    <span class="card-description">Nominations: 6</span>
+                        <span class="card-description">Awards Won: 3</span>
+                    </div>
+				</div>
+
+                <div class="card card-achievement">
+					<img src="Images/Awards/porin.jpeg" alt="porin" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">porin awards</span>
+					    <span class="card-description">Nominations: 7</span>
+                        <span class="card-description">Awards Won: 6</span>
+                    </div>
+				</div>
+
+                <div class="card card-achievement">
+					<img src="Images/Awards/world-music-awards.jpeg" alt="world-music-awards" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">world music awards</span>
+					    <span class="card-description">Nominations: 3</span>
+                        <span class="card-description">Awards Won: 2</span>
+                    </div>
+				</div>
+
+                <div class="card card-achievement">
+					<img src="Images/Awards/billboard-music-awards.jpeg" alt="billboard-music-awards" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">billboard music awards</span>
+					    <span class="card-description">Nominations: 10</span>
+                        <span class="card-description">Awards Won: 1</span>
+                    </div>
+				</div>
+
+                <div class="card card-achievement">
+					<img src="Images/Awards/billboard-touring-awards.jpeg" alt="billboard-touring-awards" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">billboard touring awards</span>
+					    <span class="card-description">Nominations: 8</span>
+                        <span class="card-description">Awards Won: 4</span>
+                    </div>
+				</div>
+
+                <div class="card card-achievement">
+					<img src="Images/Awards/q-awards.jpeg" alt="q-awards" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">q awards</span>
+					    <span class="card-description">Nominations: 4</span>
+                        <span class="card-description">Awards Won: 1</span>
+                    </div>
+				</div>
+			</div>
+		</main>
+
+        <!--Footer-->
+		<footer>
+			<span id="disclaimer-link" onclick="viewDisclaimer()">Disclaimer</span>
+		</footer>
+
+	</body>
+</html>

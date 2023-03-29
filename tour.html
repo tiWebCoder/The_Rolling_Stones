@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tour</title>
+		<link rel="stylesheet" href="rollingStonesStyle.css"/>
+		<script src="rollingStonesScript.js"></script>
+		<link rel="shortcut icon" href="Images/logo.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+
+        <!--Header-->
+        <header>
+            <a href="index.html"><img src="Images/logo.png" alt="logo" id="logo"></a>
+
+			<div class="container container-controls">
+				<a class="controls" id="menu-icon" onclick="openMenu()"><i class="fa fa-bars"></i> <span>menu</span></a>
+			</div>
+
+            <!--Menu-->
+			<nav id="menu">
+				<div class="container container-controls">
+					<a class="controls" id="close-button" onclick="closeContent()"><i class="fa fa-times"></i></a>
+				</div>
+
+				<a href="index.html">home</a>
+				<a href="biography.html">biography</a>
+				<a href="achievements.html">achievements</a>
+				<a href="tour.html">tour</a>
+			</nav>
+        </header>
+
+        <!--Main Page Content-->
+		<main>
+            <img src="Images/band-banner.jpeg" alt="The Rolling Stones band banner" id="band-banner">
+
+			<div class="container container-content" id="main-content-container">
+				
+				<div class="container container-content">
+					main page content
+				</div>
+			</div>
+		</main>
+
+        <!--Footer-->
+		<footer>
+			<span>The Rolling Stones &copy; 2023</span>
+			<span id="disclaimer-link" onclick="viewDisclaimer()">Disclaimer</span>
+		</footer>
+
+	</body>
+</html>
+
+<!-------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tour</title>
+		<link rel="stylesheet" href="rollingStonesStyle.css"/>
+		<script src="rollingStonesScript.js"></script>
+		<link rel="shortcut icon" href="Images/logo.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+
+        <input class="checkbox" id="checkbox-menu" type="checkbox">
+
+        Header
+        <header>
+            <a href="index.html"><img src="Images/logo.png" alt="logo" id="logo"></a>
+
+            <div class="container container-controls">
+				<label for="checkbox-menu" class="controls" id="menu-icon"><i class="fa fa-bars"></i></label>
+			</div>
+
+            Menu
+			<nav id="menu">
+				<div class="container container-controls">
+					<label for="checkbox-menu" class="controls" id="close-button"><i class="fa fa-times"></i></label>
+				</div>
+
+				<a href="index.html">home</a>
+				<a href="biography.html">biography</a>
+				<a href="achievements.html">achievements</a>
+				<a href="tour.html" class="active">tour</a>
+			</nav>
+        </header>
+
+        Main Page Content
+		<main>
+            <img src="Images/band-wallpaper.jpeg" alt="band-wallpaper" id="wallpaper">
+
+			<div class="container container-content" id="tour-container">
+				<div class="card card-tour">
+					<img src="Images/Venues/all-phones-arena.jpeg" alt="all-phones-arena" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: sydney, australia</span>
+					    <span class="card-description">Venue: Allphones Arena</span>
+					    <span class="card-description">Date: 25th March</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/rod-laver-arena.jpeg" alt="rod-laver-arena" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: melbourne, australia</span>
+					    <span class="card-description">Venue: Rod Laver Arena</span>
+					    <span class="card-description">Date: 28th March</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/hanging-rock.jpeg" alt="hanging-rock" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: victoria, australia</span>
+					    <span class="card-description">Venue: Hanging Rock</span>
+					    <span class="card-description">Date: 30th March</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/entertainment-centre.jpeg" alt="entertainment-centre" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: brisbane, australia</span>
+					    <span class="card-description">Venue: Entertainment Centre</span>
+					    <span class="card-description">Date: 2nd April</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/mount-smart-stadium.jpeg" alt="mount-smart-stadium" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: auckland, new zealand</span>
+					    <span class="card-description">Venue: Mount Smart Stadium</span>
+					    <span class="card-description">Date: 5th April</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/pink-pop-festival.jpeg" alt="pink-pop-festival" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: landgraaf, netherlands</span>
+					    <span class="card-description">Venue: Pink Pop Festival</span>
+					    <span class="card-description">Date: 7th June</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/waldbuhne.jpeg" alt="waldbuhne" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: berlin, germany</span>
+					    <span class="card-description">Venue: Waldbuhne</span>
+					    <span class="card-description">Date: 10th June</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/espirit-arena.jpeg" alt="espirit-arena" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: dusseldorf, germany</span>
+					    <span class="card-description">Venue: Espirit Arena</span>
+					    <span class="card-description">Date: 19th June</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/circus-maximus.jpeg" alt="circus-maximus" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: rome, italy</span>
+					    <span class="card-description">Venue: Circus Maximus</span>
+					    <span class="card-description">Date: 22nd June</span>
+                    </div>
+				</div>
+
+                <div class="card card-tour">
+					<img src="Images/Venues/tw-classic-festival.jpeg" alt="tw-classic-festival" class="card-image">
+                    <div class="card-body">
+                        <span class="card-title">country: werchter, belgium</span>
+					    <span class="card-description">Venue: TW Classic Festival</span>
+					    <span class="card-description">Date: 28th June</span>
+                    </div>
+				</div>
+			</div>
+		</main>
+
+        Footer
+		<footer>
+			<span id="disclaimer-link" onclick="viewDisclaimer()">Disclaimer</span>
+		</footer>
+
+	</body>
+</html>
