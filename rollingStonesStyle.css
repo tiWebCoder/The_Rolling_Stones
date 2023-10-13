@@ -1,9 +1,8 @@
- *{
+*{
     margin: 0px;
     padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: all 0.5s ease-in-out;
-    color: #ffffff;
+    transition: all 0.5s;
 }
 
 html{
@@ -14,6 +13,7 @@ html{
 
 body{
     position: relative;
+    min-height: 100%;
 }
 
 a, h2, h3, th{
@@ -40,18 +40,16 @@ table{
 /*****Container Styling*****/
 .container, .container-controls{
     display: flex;
-    padding: 10px 10px;
 }
 
     .controls{
         cursor: pointer;
-        margin: 5px 5px 5px 5px;
+        margin: 5px 5px;
     }
 
 .container-content{
     display: grid;
     grid-gap: 10px;
-    padding: 10px 10px;
 }
 
 /*****Card Styling*****/
@@ -68,7 +66,6 @@ table{
         max-height: 400px;
         width: 100%;
         height: 100%;
-        border-radius: 50%;
     }
 
     .card-body{
@@ -85,8 +82,16 @@ header{
     left: 0%;
     right: 0%;
     z-index: 1;
+    color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+    }
 
     /*****Logo Styling*****/
     #logo{
@@ -96,23 +101,33 @@ header{
         height: 100%;
         border-radius: 50%;
         padding: 5px 5px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgb(255, 255, 255);
+    }
+
+    /*****Menu Styling*****/
+    #menu-container #close-icon{
+        display: none;
+    }
+
+    #menu{
+        display: none;
     }
 
 /*****Main Content Container Styling*****/
-main{
-    padding: 0px 0px 100px 0px;
+main .container{
+    flex-direction: column;
+    justify-content: center;
 }
 
-    main .container{
-        flex-direction: column;
-        justify-content: center;
-        background-color: #111111;
+    main h2{
+        text-align: center;
+        margin: 15px 0px;
     }
 
-        main .container h2{
-            text-align: center;
-        }
+    main .container:nth-child(odd), main .container:nth-child(odd) *{
+        color: #ffffff;
+        background-color: #111111;
+    }
 
     /*****Band Banner Styling*****/
     #band-banner{
@@ -125,16 +140,8 @@ main{
 
 /*****Footer Styling*****/
 footer{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    padding: 0px 10px;
+    padding: 20px 10px;
 }
-
-    footer *{
-        color: #111111;
-    }
 
     /*****Social Media Container Styling*****/
     #social-media{
@@ -154,6 +161,19 @@ footer{
 
     /*****Header Styling*****/
 
+        /*****Menu Styling*****/
+        #menu{
+            position: fixed;
+            top: 8%;
+            left: 0%;
+            right: 0%;
+            z-index: 5;
+            height: 0%;
+            display: none;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
     /*****Main Content Container Styling*****/
 
         /*****Index Page Styling*****/
@@ -161,15 +181,9 @@ footer{
             justify-content: center;
         }
 
-            /*****Biography Section Styling*****/
-            #biography-section{
-                grid-template-columns: repeat(1, auto);
-            }
-
-            /*****Achievements Section Styling*****/
-            #achievements-section{
-                grid-template-columns: repeat(1, auto);
-            }
+        #index-content-container .container-content{
+            grid-template-columns: repeat(1, auto);
+        }
 
         /*****Achievements Page Styling*****/
         #achievements-content-container .container-content{
@@ -190,20 +204,22 @@ footer{
 
     /*****Header Styling*****/
 
+        /*****Menu Styling*****/
+        
     /*****Main Content Container Styling*****/
 
         /*****Index Page Styling*****/
 
             /*****Biography Section Styling*****/
-            #biography-section{
+            #index-content-container #biography-section{
                 grid-template-columns: repeat(3, auto);
             }
 
             /*****Achievements Section Styling*****/
-            #achievements-section{
+            #index-content-container #achievements-section{
                 grid-template-columns: repeat(5, auto);
             }
-
+        
         /*****Achievements Page Styling*****/
         #achievements-content-container .container-content{
             grid-template-columns: repeat(3, auto);
