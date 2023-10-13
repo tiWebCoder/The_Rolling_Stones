@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Template</title>
-		<link rel="stylesheet" href="rollingStonesStyle.css">
-		<script src="rollingStonesScript.js"></script>
-		<link rel="shortcut icon" href="Images/logo.png">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="UTF-8">
+        <title>Tour</title>
+	<link rel="stylesheet" href="rollingStonesStyle.css">
+	<script src="rollingStonesScript.js"></script>
+	<link rel="shortcut icon" href="Images/logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
     </head>
 
     <body>
@@ -16,6 +16,21 @@
         <header>
             <div class="container">
                 <a href="index.html"><img src="Images/logo.png" alt="logo" id="logo"></a>
+
+                <div class="container" id="menu-container">
+			<div class="container-controls">
+				<a class="controls fa fa-bars" id="menu-icon" onclick="openMenu()"></a>
+				<a class="controls fa fa-times" id="close-icon" onclick="closeMenu()"></a> 
+			</div>
+	
+			<!--Menu-->
+			<nav id="menu">
+				<a href="index.html">home</a>
+				<a href="biography.html">biography</a>
+				<a href="achievements.html">achievements</a>
+				<a href="tour.html">tour</a>
+			</nav>
+		</div>
             </div>
         </header>
 
@@ -27,13 +42,13 @@
 				<div class="container">
                     <h2>tour</h2>
 
-					<div class="container-content">
-						<table>
+		<div class="container-content">
+			<table>
                             <thead>
                                 <tr>
                                     <th>Date:</th>
-								    <th>Country:</th>
-								    <th>Venue:</th>
+				    <th>Country:</th>
+				    <th>Venue:</th>
                                 </tr>
                             </thead>
                             <tr>
@@ -52,17 +67,17 @@
                                 <td>Hanging Rock</td>
                             </tr>
                             <tr>
-                                <td>2nd April</td>
+                                <td>02nd April</td>
                                 <td>Brisbane, Australia</td>
                                 <td>Entertainment Centre</td>
                             </tr>
                             <tr>
-                                <td>5th April</td>
+                                <td>05th April</td>
                                 <td>Auckland, New Zealand</td>
                                 <td>Mount Smart Stadium</td>
                             </tr>
                             <tr>
-                                <td>7th June</td>
+                                <td>07th June</td>
                                 <td>Landgraaf, Netherlands</td>
                                 <td>Pink Pop Festival</td>
                             </tr>
@@ -87,9 +102,9 @@
                                 <td>TW Classic Festival</td>
                             </tr>
                         </table>
-					</div>
 				</div>
 			</div>
+		</div>
         </main>
 
         <!--Footer-->
