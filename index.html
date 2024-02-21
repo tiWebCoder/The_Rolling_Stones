@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Rolling Stones</title>
+		<link rel="stylesheet" href="rollingStonesStyle.css">
+		<script src="rollingStonesScript.js"></script>
+		<link rel="shortcut icon" href="Images/logo.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <header>
+            <div class="container">
+                <a href="index.html"><img src="Images/logo.png" alt="logo" id="logo"></a>
+
+				<div class="container" id="menu-container">
+					<div class="container-controls">
+						<a class="controls fa fa-bars" id="menu-icon" onclick="openMenu()"></a>
+						<a class="controls fa fa-times" id="close-icon" onclick="closeMenu()"></a> 
+					</div>
+
+					<!--Menu-->
+					<nav id="menu">
+						<a href="index.html">home</a>
+						<a href="biography.html">biography</a>
+						<a href="achievements.html">achievements</a>
+						<a href="tour.html">tour</a>
+					</nav>
+				</div>
+            </div>
+        </header>
+
+        <!--Main Page Content-->
+        <main>
+            <div id="band-banner"></div>
+
+			<div class="container" id="index-content-container">
+				
+				<!--Biography Section-->
+				<section class="container">
+					<h2 class="title">biography</h2>
+
+					<div class="container-content" id="biography-section">
+						<div class="card card-biography">
+							<img src="Images/Members/ronnie-wood.jpeg" alt="ronnie-wood" class="card-image">
+							<div class="card-body">
+								<h3 class="card-title">ronnie wood</h3>
+								<p class="card-text">Band Role: Guitarist</p>
+							</div>
+						</div>
+
+						<div class="card card-biography">
+							<img src="Images/Members/charlie-watts.jpeg" alt="charlie-watts" class="card-image">
+							<div class="card-body">
+								<h3 class="card-title">charlie watts</h3>
+								<p class="card-text">Band Role: Drummer</p>
+							</div>
+						</div>
+
+						<div class="card card-biography">
+							<img src="Images/Members/mick-jagger.jpeg" alt="mick-jagger" class="card-image">
+							<div class="card-body">
+								<h3 class="card-title">mick jagger</h3>
+								<p class="card-text">Band Role: Lead Vocalist</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-controls">
+                        <a href="biography.html" class="controls">view full biography</a>
+                    </div>
+				</section>
+
+				<!--Achievements Section-->
+				<section class="container">
+					<h2 class="title">achievements</h2>
+
+					<div class="container-content" id="achievements-section">
+						<div class="card card-achievements">
+							<img src="Images/Awards/rock-and-roll-hall-of-fame.jpeg" alt="rock-and-roll-hall-of-fame" class="card-image">
+							<div class="card-body">
+								<h3 class="card-title">rock &amp; roll hall of fame</h3>
+								<p class="card-text">Induction Year: 1989</p>
+							</div>
+						</div>
+
+						<div class="card card-achievements">
+							<img src="Images/Awards/grammy.jpeg" alt="grammy" class="card-image">
+							<div class="card-body">
+								<h3 class="card-title">grammy awards</h3>
+								<p class="card-text">Nominations: 12</p>
+								<p class="card-text">Awards Won: 3</p>
+							</div>
+						</div>
+
+						<div class="card card-achievements">
+							<img src="Images/Awards/mtv.jpeg" alt="mtv" class="card-image">
+							<div class="card-body">
+								<h3 class="card-title">mtv awards</h3>
+								<p class="card-text">Nominations: 6</p>
+								<p class="card-text">Awards Won: 3</p>
+							</div>
+						</div>
+
+						<div class="card card-achievements">
+							<img src="Images/Awards/porin.jpeg" alt="porin" class="card-image">
+							<div class="card-body">
+								<h3 class="card-title">porin awards</h3>
+								<p class="card-text">Nominations: 7</p>
+								<p class="card-text">Awards Won: 6</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-controls">
+						<a href="achievements.html" class="controls">view all achievements</a>
+					</div>
+				</section>
+
+				<!--Tour Section-->
+				<section class="container">
+					<h2 class="title">tour</h2>
+
+					<div class="container-content" id="tour-section">
+						<table>
+							<thead>
+                                <tr>
+									<th>Date:</th>
+								    <th>Country:</th>
+								    <th>Venue:</th>
+                                </tr>
+							</thead>
+							<tr>
+								<td>25th March</td>
+								<td>Sydney, Australia</td>
+								<td>Allphones Arena</td>
+							</tr>
+							<tr>
+								<td>28th March</td>
+								<td>Melbourne, Australia</td>
+								<td>Rod Laver Arena</td>
+							</tr>
+							<tr>
+								<td>30th March</td>
+								<td>Victoria, Australia</td>
+								<td>Hanging Rock</td>
+							</tr>
+							<tr>
+								<td>02nd April</td>
+								<td>Brisbane, Australia</td>
+								<td>Entertainment Centre</td>
+							</tr>
+							<tr>
+								<td>05th April</td>
+								<td>Auckland, New Zealand</td>
+								<td>Mount Smart Stadium</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="container-controls">
+                        <a href="tour.html" class="controls">view full tour</a>
+                    </div>
+				</section>
+
+			</div>
+        </main>
+
+        <!--Footer-->
+		<footer>
+			<div class="container">
+				<span id="disclaimer-link" onclick="viewDisclaimer()">Disclaimer</span>
+				<span>The Rolling Stones &copy; 2023</span>
+				<div class="container-controls" id="social-media">
+					<a href="https://www.youtube.com/channel/UCB_Z6rBg3WW3NL4-QimhC2A" class="controls fa fa-youtube-play" target="_blank"></a>
+					<a href="https://www.facebook.com/therollingstones/" class="controls fa fa-facebook-square" target="_blank"></a>
+					<a href="https://www.instagram.com/therollingstones/?hl=en" class="controls fa fa-instagram" target="_blank"></a>
+					<a href="https://twitter.com/RollingStones?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="controls fa fa-twitter-square" target="_blank"></a>
+				</div>
+			</div>
+		</footer>
+        
+    </body>
+</html>

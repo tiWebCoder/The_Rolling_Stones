@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+}
+
+html, body{
+    position: relative;
+    min-height: 100%;
+}
+
+a, .title, .card-title, th{
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: normal;
+}
+
+.container, .container-controls, .card, .card-body, #menu{
+    -webkit-display: flex;
+       -moz-display: flex;
+        -ms-display: flex;
+         -o-display: flex;
+            display: flex;
+}
+
+    .card, .card-body{
+        flex-direction: column;
+        align-items: center;
+    }
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px 0px;
+}
+
+    tr{
+        border-bottom: 0.5px solid #f2f2f2;
+    }
+
+/*****Container Styling*****/
+.controls{
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.container-content{
+    display: -ms-grid;
+        display: grid;
+    grid-gap: 10px 10px;
+}
+
+/*****Card Styling*****/
+.card{
+    justify-content: center;
+    text-align: center;
+}
+
+    .card-image{
+        max-width: 100%;
+        max-height: 400px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-body{
+        padding: 10px 10px;
+    }
+
+        .card-text{
+            text-align: justify;
+        }
+
+/*****Header Styling*****/
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 5;
+    padding: 10px 10px;
+    background-color: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*****Logo Styling*****/
+    #logo{
+        max-width: 50px;
+        max-height: 50px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        padding: 5px 5px;
+        background-color: rgb(255, 255, 255);
+    }
+
+/*****Main Content Container Styling*****/
+main .container{
+    flex-direction: column;
+    justify-content: center;
+}
+
+    main .title{
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    main .container:nth-child(odd), main .container:nth-child(odd) *{
+        color: #bdbdbd;
+        background-color: #2d2d30;
+    }
+
+    main .container-controls{
+        justify-content: center;
+    }
+
+        main .controls{
+            color: inherit;
+            background-color: transparent;
+        }
+
+    /*****Band Banner Styling*****/
+    #band-banner{
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Images/band-banner.jpeg);
+    }
+
+/*****Footer Styling*****/
+footer{
+    padding: 10px 10px;
+}
+
+    #disclaimer-link{
+        cursor: pointer;
+    }
+
+    /*****Social Media Styling*****/
+    #social-media{
+        flex-direction: row;
+    }
+
+/**********************************************************************Mobile Layout**********/
+@media only screen and (min-width: 320px){
+
+    /*****Header Styling*****/
+
+        /*****Menu Styling*****/
+        #menu-container #close-icon{
+            display: none;
+        }
+
+        #menu{
+            position: fixed;
+            top: -100%;
+            left: 0%;
+            right: 0%;
+            flex-direction: column;
+            padding: 10px 10px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+            #menu a{
+                margin: 10px 0px;
+                padding: 5px 0px;
+                color: #bdbdbd;
+            }
+
+    /*****Main Content Container Styling*****/
+    
+        /*****Index, Biography & Achievements Page Styling*****/
+        #index-content-container .container-content, 
+        #biography-content-container .container-content, 
+        #achievements-content-container .container-content{
+            grid-template-columns: repeat(1, auto);
+        }
+
+    /*****Footer Styling*****/
+    footer .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/**********************************************************************Tablet Layout**********/
+@media only screen and (min-width: 768px){
+    
+    /*****Header Styling*****/
+        
+        /*****Menu Styling*****/
+        #menu-container .container-controls{
+            display: none;
+        }
+
+        #menu{
+            all: initial;
+        }
+
+            #menu a{
+                margin: 0px 5px;
+            }
+
+    /*****Main Content Container Styling*****/
+
+        /*****Index Page Styling*****/
+
+            /*****Biography Section Styling*****/
+            #index-content-container #biography-section{
+                grid-template-columns: repeat(3, auto);
+            }
+
+            /*****Achievements Section Styling*****/
+            #index-content-container #achievements-section{
+                grid-template-columns: repeat(5, auto);
+            }
+
+        /*****Biography Page Styling*****/
+        #biography-content-container .card{
+            margin: 10px 10px;
+        }
+
+        /*****Achievements Page Styling*****/
+        #achievements-content-container .container-content{
+            grid-template-columns: repeat(3, auto);
+        }        
+
+    /*****Footer Styling*****/
+    footer .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+/**********************************************************************Laptop, Desktop & Large Screen Layout**********/
+@media only screen and (min-width: 1024px){
+
+    html, body{
+        font-size: 105%;
+    }
+
+    #menu a:hover, .controls:hover{
+        cursor: pointer;
+        color: #f2f2f2;
+    }
+
+}
